@@ -7,6 +7,8 @@ print(sys.argv)
 data = np.loadtxt(filename,skiprows=32,delimiter=',')   # Attempts to load filename into local variable data.
 print(data)
 
+#filename = "raw-data/Sp15_245L_sect-001_group-1_glass.raw"
+
 ## Part 0
 # Figure out what arguments to add to the loadtxt function call
 # so that numbers are loaded into the local function 'data'.
@@ -23,6 +25,12 @@ print(data)
 # Make sure to include axis labels and units!
 # plt.plot(xdata,ydata, arguments-to-make-plot-pretty)
 
+stress = data[:,3]
+strain = data[:,7]
+
+plt.plot(strain,stress, color='k', label = 'Stress vs Strain')
+plt.legend(loc = 'best')
+plt.show()
 
 ## Part 2
 # Check to see if your code in part 1 will plot all of the files in raw-data/
