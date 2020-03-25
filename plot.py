@@ -28,7 +28,9 @@ print(data)
 stress = data[:,3]
 strain = data[:,7]
 
-plt.plot(strain,stress, color='k', label = 'Stress MPa vs Strain %')
+plt.plot(strain,stress, color='k', label = 'Glass Data')
+plt.xlabel('Strain [Ext %]')
+plt.ylabel('Strain [MPa]')
 plt.legend(loc = 'best')
 plt.show()
 
