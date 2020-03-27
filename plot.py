@@ -3,7 +3,7 @@ import numpy as np
 import sys
 
 filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py ARG1 ARG2 
-print(sys.argv)
+#print(sys.argv)
 data = np.loadtxt(filename,skiprows=32,delimiter=',')   # Attempts to load filename into local variable data.
 print(data)
 
@@ -26,15 +26,15 @@ print(data)
 # plt.plot(xdata,ydata, arguments-to-make-plot-pretty)
 
 maxrange = (len(data)-1)
-stress = data[:,3]
-strain = data[:,7]
+stress = - data[:,3]
+strain = - data[:,7]
 
 iDash = filename.rindex('-')
 mylabel = filename[iDash+1:-4]
 
 plt.plot(strain,stress, color='k', label = 'Glass Data')
 plt.xlabel('Strain [Ext %]')
-plt.ylabel('Strain [MPa]')
+plt.ylabel('Stress [MPa]')
 plt.grid(True)
 plt.legend(loc = 'best')
 plt.show()
@@ -50,6 +50,13 @@ plt.show()
 # sure it makes sense! Use the slope of this line to calculate and print
 # the Young's modulus (with units!)
 
+first, second = np.polyfit(stress, strain, 1)
+linex = np.linspace(min(stress), max(stress))
+liney = np.polyval([first,second], linex)
+
+plt.plot(linex,liney, color = 'r', linestyle = '-')
+plt.savefig(filename+ '.pdf')
+plt.show()
 
 ## Part 4
 # Modify your code to save your plots to a file and see if you can generate
@@ -57,5 +64,5 @@ plt.show()
 # directory. If you haven't already, this is a good time to add text to 
 # your .gitignore file so you're not committing the figures to your repository.
 
-
+print("Young's Modulus: " + str(first) + str(' MPa'))
 
