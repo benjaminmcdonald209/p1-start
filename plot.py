@@ -25,12 +25,17 @@ print(data)
 # Make sure to include axis labels and units!
 # plt.plot(xdata,ydata, arguments-to-make-plot-pretty)
 
+maxrange = (len(data)-1)
 stress = data[:,3]
 strain = data[:,7]
+
+iDash = filename.rindex('-')
+mylabel = filename[iDash+1:-4]
 
 plt.plot(strain,stress, color='k', label = 'Glass Data')
 plt.xlabel('Strain [Ext %]')
 plt.ylabel('Strain [MPa]')
+plt.grid(True)
 plt.legend(loc = 'best')
 plt.show()
 
