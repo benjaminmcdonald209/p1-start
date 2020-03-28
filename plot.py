@@ -7,7 +7,7 @@ filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py
 data = np.loadtxt(filename,skiprows=32,delimiter=',')   # Attempts to load filename into local variable data.
 print(data)
 
-# filename = "raw-data/Sp15_245L_sect-001_group-1_glass.raw"
+# filename = 'raw-data/Sp15_245L_sect-001_group-1_glass.raw'
 
 ## Part 0
 # Figure out what arguments to add to the loadtxt function call
