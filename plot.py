@@ -66,3 +66,9 @@ plt.show()
 
 print("Young's Modulus: " + str(first) + str(' MPa'))
 
+#Checklist:
+#Part 0: complete
+#Part 1: complete
+#Part 2: complete
+#Part 3: complete
+#Part 4: complete
