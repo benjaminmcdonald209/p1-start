@@ -2,7 +2,7 @@
 
 -Accessing the Code: In order to access the code you will need to download the software listed above (some mac specific). Then you will need to connect to the VPN and log into coen-bascottie. Once logged in you will have access to all of the data and code for the project. 
 
--Running the Data: In order to run the data you would simply need to access the code using the staps from above then continue in the terminal with a code such as "python plot.py raw-data/..." and fill in with the specific data you want to use. For example the full code would look like "python plot.py raw-data/Sp15_245L_sect-001_group-1_glass.raw" to pull the graphs for the glass data.
+-Running the Data: In order to run the data you would simply need to access the code using the staps from above then continue with connecting to git and cloning your repository then jump into the terminal with a code such as "python plot.py raw-data/..." and fill in with the specific data you want to use. For example the full code would look like "python plot.py raw-data/Sp15_245L_sect-001_group-1_glass.raw" to pull the graphs for the glass data.
 
 -Notes: In this project the tab command allong with the up and down arrow keys were my best friend. These allowed me to get things done at a much faster pase then I would have been able to go on my own. The tab command allows the system to fill in your code if it recognizes the first few letters of what you've typed.
 
