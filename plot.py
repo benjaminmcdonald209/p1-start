@@ -32,7 +32,7 @@ strain = - data[:,7]
 iDash = filename.rindex('-')
 mylabel = filename[iDash+1:-4]
 
-plt.plot(strain,stress, color='k', label = mylabel)
+plt.plot(strain,stress, color='g', label = mylabel)
 plt.xlabel('Strain [Ext %]')
 plt.ylabel('Stress [MPa]')
 plt.grid(True)
