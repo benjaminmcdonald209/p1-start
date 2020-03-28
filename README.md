@@ -1,6 +1,6 @@
 -Software Used: cisco AnyConnect(for VPN), XQuartz, python, numpy, matplotlib, git
 
--Accessing the Code: In order to access the code you will need to download the software listed above (for macs). Then you will need to connect to the VPN and log into coen-bascottie. Once logged in you will have access to all of the data and code for the project. 
+-Accessing the Code: In order to access the code you will need to download the software listed above (some mac specific). Then you will need to connect to the VPN and log into coen-bascottie. Once logged in you will have access to all of the data and code for the project. 
 
 -Running the Data: In order to run the data you would simply need to access the code using the staps from above then continue in the terminal with a code such as "python plot.py raw-data/..." and fill in with the specific data you want to use. For example the full code would look like "python plot.py raw-data/Sp15_245L_sect-001_group-1_glass.raw" to pull the graphs for the glass data.
 
